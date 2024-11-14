@@ -1,0 +1,254 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>GitHub Copilot WS - Exercises</title>
+    <link rel="stylesheet" href="Exercises1.css">
+</head>
+<body>
+
+<h1>Exercises</h1>
+    
+<div id="allExercises">
+<div class="category">
+    <h2>Warmup</h2>
+    <div class="exercise">
+        <h3>#warmup_EnumerationGeneration</h3>
+        <p><strong>Class:</strong> StatesProvider.cs</p>
+        <p><strong>Task:</strong> Implement the methods so that they return the result according to their name.</p>
+    </div>
+    <div class="exercise">
+        <h3>#warmup_ImplementationGeneration</h3>
+        <p><strong>Class:</strong> FileContentFilter.cs</p>
+        <p><strong>Task:</strong> Create new method in the class, which will filter only those lines from text file, which contain specified keyword. Filtered lines should be written to the specified file.</p>
+    </div>
+    <div class="exercise">
+        <h3>#warmup_PropertiesGeneration</h3>
+        <p><strong>Class:</strong> Airport.cs</p>
+        <p><strong>Task:</strong> Try generating a few properties for a class with this 'on-the-fly' completion.</p>
+    </div>
+</div>
+
+<div class="category">
+    <h2>Context</h2>
+    <div class="exercise">
+        <h3>#context_SearchAlgorithms</h3>
+        <p><strong>File:</strong> Search_Algorithm_1.cs &#38; Sorting_Algorithm_2.cs</p>
+        <p><strong>Task:</strong> Go to the methods in both classes, and start implementing them. Compare the on-the-fly suggestions.</p>
+    </div>
+
+    <div class="exercise">
+        <h3>#context_GivenExample</h3>
+        <p><strong>File:</strong> ParseByExample.cs</p>
+        <p><strong>Task:</strong> Generate a model-class and the text parser which parses each line into the model-class.</p>
+    </div>
+
+    <div class="exercise">
+        <h3>#context_OpenedTabs</h3>
+        <p><strong>File:</strong> Demo_Executable.Program.cs</p>
+        <p><strong>Task:</strong> Open the 'Program.cs' file and try to finish the implementation of ContextOpenedTabs - assignment of variables. Then open 'BubbleSorter.cs' and 'ElementSearch.cs' and try again.' </p>
+    </div>
+</div>
+
+<div class="category">
+    <h2>Prompt-engineering</h2>
+    <div class="exercise">
+        <h3>#prompts_AppropriateTest</h3>
+        <p><strong>File:</strong> Prompt_Example_1.cs</p>
+        <p><strong>Task:</strong> Generate appropriate tests for CourseController in University.API project.</p>
+    </div>
+
+    <div class="exercise">
+        <h3>#prompts_AppropriateTestCase</h3>
+        <p><strong>File:</strong> ElementSearchTest.cs</p>
+        <p><strong>Task:</strong> Generate tests to cover functionality of ElementSearch class. Play with a prompt to get just one test with a few [TestCase] scenarios.</p>
+        <p class="solution"><strong>Solution:</strong> I would like to create a few tests. There should be just one test-method but it should have at least 5 test cases using [TestCase] attribute with method parameters.</p>
+    </div>
+
+    <div class="exercise">
+        <h3>#prompts_SearchAlgorithm</h3>
+        <p><strong>File:</strong> Prompt_Example_1.cs</p>
+        <p><strong>Task:</strong> Implement the element searching algorithm. First algorithm should work on arbitrary collections. Second one should take into account, that the collection is always sorted on the input.</p>
+    </div>
+</div>
+
+<div class="category">
+    <h2>Slash Commands</h2>
+    <div class="exercise">
+        <h3>#slash_Explanation_Algorithm</h3>
+        <p><strong>File:</strong> Explain_Command_1.cs</p>
+        <p><strong>Task:</strong> Find out what is going on in here.</p>
+    </div>
+    <div class="exercise">
+        <h3>#slash_Explanation_SQL</h3>
+        <p><strong>File:</strong> Explain_Command_2.sql</p>
+        <p><strong>Task:</strong> Find out what exactly this SQL is used for.</p>
+    </div>
+    <div class="exercise">
+        <h3>#slash_Explanation_YAML</h3>
+        <p><strong>File:</strong> VotingApp.yaml</p>
+        <p><strong>Task:</strong> Find out what this YAML file is all about.</p>
+    </div>
+    <div class="exercise">
+        <h3>#slash_Fix_MergeSort</h3>
+        <p><strong>File:</strong> Fix_Command_1.cs</p>
+        <p><strong>Task:</strong> Find out why the MergeSort algorithm is not working as expected.</p>
+    </div>
+    <div class="exercise">
+        <h3>#slash_Fix_ColorFinder</h3>
+        <p><strong>File:</strong> Fix_Command_2.cs</p>
+        <p><strong>Task:</strong> Find out why the algorithms for finding a color do not work.</p>
+    </div>
+    <div class="exercise">
+        <h3>#slash_Optimize_SQL</h3>
+        <p><strong>File:</strong> Optimize_Command.cs</p>
+        <p><strong>Task:</strong> Try to optimize persisting to the Database.</p>
+    </div>
+</div>
+
+<div class="category">
+    <h2>Agents &#38; Variables</h2>
+    <div class="exercise">
+        <h3>#agents_variables_Solution_Workspace</h3>
+        <p><strong>Task:</strong> Find out, whether there is some sorting algorithm in this solution.</p>
+    </div>
+    <div class="exercise">
+        <h3>#agents_variables_Class_File</h3>
+        <p><strong>File:</strong> CourseRepository.cs</p>
+        <p><strong>Task 1:</strong> Find out, what distinct database interaction methods are there in 'Queries1.cs' and 'Queries2.cs'.</p>
+        <p><strong>Task 2:</strong> Extract all those methods into the 'CourseRepository.cs' file.</p>
+    </div>
+</div>
+
+<div class="category">
+    <h2>Generation</h2>
+
+    <div class="exercise">
+        <h3>#generation_Login_ATs</h3>
+        <p><strong>File:</strong> LoginForm_ATs.txt</p>
+        <p><strong>Task:</strong> Imagine you are going to create the HTML form for user login. Generate Acceptance Criteria for that.</p>
+    </div>
+
+    <div class="exercise">
+        <h3>#generation_HTML_Login</h3>
+        <p><strong>File:</strong> Login.html</p>
+        <p><strong>Task:</strong> Generate HTML login form according to acceptance criteria listed in 'LoginForm_ATs.txt'.</p>
+    </div>
+
+    <div class="exercise">
+        <h3>#generation_ImageContentAnalysis</h3>
+        <p><strong>File:</strong> ImageContentAnalyzer.cs</p>
+        <p><strong>Task:</strong> Change the method in a way that it will analyze the image content using the Azure Content Safety AI service.</p>
+    </div>
+
+    <div class="exercise">
+        <h3>#generation_RateLimiting</h3>
+        <p><strong>File:</strong> Program.cs</p>
+        <p><strong>Task:</strong> Generate some kind of rate limiting to avoid DoS.</p>
+    </div>
+</div>
+
+<div class="category">
+    <h2>Refactoring</h2>
+    <div class="exercise">
+        <h3>#refactoring_CQRS</h3>
+        <p><strong>File:</strong> CQRS_refactoring.cs</p>
+        <p><strong>Task:</strong> Move 'Command' methods to 'Commands.cs' file, and 'Query' methods to 'Queries.cs' file.</p>
+    </div>
+    <div class="exercise">
+        <h3>#refactoring_SQLtoNOSQL</h3>
+        <p><strong>File:</strong> Commands.cs</p>
+        <p><strong>Task:</strong> Refactor all methods so that instead of SQL, they communicate with NoSQL - Azure Cosmos DB, partition key being 'DepartmentId'.</p>
+    </div>
+
+    <div class="exercise">
+        <h3>#refactoring_StopWatch</h3>
+        <p><strong>File:</strong> CQRS_refactoring.cs</p>
+        <p><strong>Task:</strong> Add Stopwatch to every Query method in the 'CQRS_refactoring.cs'. Then remove it.</p>
+    </div>
+</div>
+
+<div class="category">
+    <h2>Debugging</h2>
+    <div class="exercise">
+        <h3>#demo_debugging_PerformanceAnalysis</h3>
+        <p><strong>File:</strong> Performance_Example.cs</p>
+    </div>
+
+    <div class="exercise">
+        <h3>#demo_debugging_ThrownExceptionAnalysis</h3>
+        <p><strong>File:</strong> Exception_Analysis.cs</p>
+    </div>
+</div>
+
+<div class="category">
+    <h2>Testing</h2>
+    <div class="exercise">
+        <h3>#testing_FailingTestAnalysis</h3>
+        <p><strong>File:</strong> ElementSearchFailingTest.cs</p>
+    </div>
+
+    <div class="exercise">
+        <h3>#testing_TestDataGeneration</h3>
+        <p><strong>File:</strong> ElementSearchTestDataTest.cs</p>
+        <p><strong>Task:</strong> Generate a few instances of test-data.</p>
+    </div>
+
+    <div class="exercise">
+        <h3>#testing_StubGeneration</h3>
+        <p><strong>File:</strong> InMemoryRepositoryStub.cs</p>
+        <p><strong>Task:</strong> In University.API project there are interfaces 'ICourseQuery' and 'ICourseCommands'. Generate one common stub-implementation for them.</p>
+    </div>
+
+    <div class="exercise">
+        <h3>#testing_TestsGeneration</h3>
+        <p><strong>File:</strong> MathematicsTest.cs</p>
+        <p><strong>Task:</strong> Generate some tests for class in file 'Mathematics.cs'.</p>
+    </div>
+</div>
+
+<div class="category">
+    <h2>General</h2>
+    <div class="exercise">
+        <h3>#general_FixOfConsoleError</h3>
+        <p><strong>File:</strong> Help_1.cs</p>
+        <p><strong>Task:</strong> Find out what you should add to University API to fix the problem.</p>
+    </div>
+
+    <div class="exercise">
+        <h3>#general_UML</h3>
+        <p><strong>File:</strong> CourseController.cs</p>
+        <p><strong>Task:</strong> Generate UML sequence diagram from method GetAll().</p>
+    </div>
+
+    <div class="exercise">
+        <h3>#general_CopilotCLI_CreateAzureResource</h3>
+        <p><strong>Task:</strong> Create Resource group in Azure using Powershell with the help of GitHub Copilot in CLI.</p>
+    </div>
+</div>
+
+<div class="category">
+    <h2>Security</h2>
+    <div class="exercise">
+        <h3>#security_Owasp_Oversharing</h3>
+        <p><strong>File:</strong> SpeakerController.cs</p>
+        <p><strong>Task:</strong> Use SessionManagerDbContext to get all Speakers and return them in the GetAllSpeakers method.</p>
+    </div>
+
+    <div class="exercise">
+        <h3>#security_Owasp_MassAssignment</h3>
+        <p><strong>File:</strong> SpeakerController.cs</p>
+        <p><strong>Task:</strong> Implement the 'UpdateSpeaker' and 'UpdateSpeakerInternal' methods.</p>
+        <p><strong>Possible prompts #1: </strong> I would like to map all properties from jsonObject to Speaker.</p>
+        <p><strong>Possible prompts #2: </strong> I would like to map jsonObject into speaker. The JsonObject is coming from the Frontend in #file:'UpdateSpeaker.html'</p>
+    </div>
+
+    <div class="exercise">
+        <h3>#security_Owasp_SqlInjection</h3>
+        <p><strong>File:</strong> UserPersistance.cs</p>
+        <p><strong>Task:</strong> TODO</p>
+    </div>
+</div>
+</div>
+</body>
+</html>
